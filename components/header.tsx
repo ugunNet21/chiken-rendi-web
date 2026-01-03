@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { useState } from "react"
-import { Menu, X } from "lucide-react"
+import { Menu, X, LogIn } from "lucide-react"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -40,6 +40,13 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
+            <Link
+              href="/login"
+              className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105"
+            >
+              <LogIn size={16} />
+              Login
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -64,6 +71,14 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
+            <Link
+              href="/login"
+              className="mx-4 mt-2 inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 rounded-lg transition-all duration-300 shadow-md"
+              onClick={() => setIsOpen(false)}
+            >
+              <LogIn size={16} />
+              Login
+            </Link>
           </nav>
         )}
       </div>
