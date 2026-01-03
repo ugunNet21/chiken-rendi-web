@@ -80,15 +80,15 @@ export default function Footer() {
             <div className="space-y-3 text-sm">
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                <span className="text-secondary/80">(+62) 812-3456-7890</span>
+                <span className="text-secondary/80">(+62) 843-8732-878</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span className="text-secondary/80">info@ternakayam.com</span>
+                <span className="text-secondary/80">renditest@gmail.com</span>
               </div>
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span className="text-secondary/80">Jl. Peternakan No. 123</span>
+                <span className="text-secondary/80">Jl. Kp Cigore</span>
               </div>
             </div>
           </div>
